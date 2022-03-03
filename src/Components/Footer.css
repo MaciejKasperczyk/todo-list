@@ -1,0 +1,12 @@
+.author {
+	color:ghostwhite;
+	position: fixed;
+	left: 5px;
+	text-shadow:2px 2px black;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-size:0.5rem;
+	letter-spacing:10px;
+    font-weight:100;
+	
+}
