@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import './App.css';
 import FadeIn from 'react-fade-in';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -73,15 +74,18 @@ function App() {
                            
                             </div>
                         </FadeIn>
+                       
                   
-              )
+                    )
+                   
               
                   
               )}
               </ul>
-              </div>
             </div>
-       
+            <Footer />
+            </div>
+          
   );
 }
 
