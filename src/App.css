@@ -6,7 +6,7 @@ body
 }
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: #4b6cb7; /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #182848, #4b6cb7); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -15,16 +15,15 @@ body
     justify-content:center;
     
 }
-.app-addTask
-{
-    width:50%;
-    border:1px solid black;
-    height:7vh;
-    display:flex;
-    align-items:center;
-    border:7px solid white;
-    border-radius:20px;
-    
+.app-addTask {
+    width: 50%;
+    border: 1px solid black;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    border: 7px solid white;
+    border-radius: 20px;
+    font-size: 0.8vw;
 }
 .app-input {
     width: 70%;
@@ -35,8 +34,8 @@ body
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     font-family: 'Press Start 2P', cursive;
-    text-align:center;
-    font-size:10px;
+    text-align: center;
+    font-size: 0.8vw;
 }
 .app-button {
     height: inherit;
@@ -44,7 +43,6 @@ body
     background-color: rgb(255,0,0);
     text-align: center;
     line-height: 7vh;
-    font-size: 1vh;
     width: 30%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -114,7 +112,9 @@ li {
     margin-top: 10px;
     text-align: center;
     line-height: 5vh;
+    font-size:1vw;
     padding: 10px;
+    min-width:150px;
     border: 3px solid black;
    
 }
@@ -122,4 +122,27 @@ ul{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+}
+@media only screen and (max-width: 800px) {
+    .app-addTask{
+        width:100%;
+        font-size:2vw;
+    }
+    .app-input {
+        font-size: 2vw;
+    }
+    li
+    {
+        font-size:2vw;
+        
+    }
+    .task
+    {
+        width:200%;
+        
+    }
+    .taskButton
+    {
+        width:1px;
+    }
 }
